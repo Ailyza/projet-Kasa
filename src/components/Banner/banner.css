@@ -1,0 +1,14 @@
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 3rem auto;
+  border-radius: 25px;
+}
+
+.banner img {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=banner.css.map */
