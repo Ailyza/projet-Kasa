@@ -1,11 +1,18 @@
+.navbar-wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+
+.navbar-wrapper li {
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0;
+}
+
 .nav-item.active {
   color: #ff6060;
   text-decoration: underline;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
-
-.navbar.bg-light {
-  border: none;
-  font-size: 24px;
-}/*# sourceMappingURL=navigation.css.map */

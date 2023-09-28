@@ -1,16 +1,25 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Carrousel from '../components/Carrousel';
 import { useLocation } from 'react-router-dom';
 
-const Fiche = () => {
+import '../App.css';
+
+import Information from '../components/Information';
+import Collapse from '../components/Collapse';
+
+
+function Fiche (){
+
   const location = useLocation();
   const logement = location.state?.element;
-  console.log(logement)
+
    return (
     <div>
-
-      <p>Fiche</p>
+      <Carrousel logement={logement}/>
+      <Information logement={logement}/>
+      <Collapse logement={logement}/>
     </div>
   )
 }
 
-export default Fiche
+export default Fiche;

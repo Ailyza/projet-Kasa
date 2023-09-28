@@ -6,7 +6,7 @@ import logo_white from '../../assets/images/logo_white.png';
 
 const Footer = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-footer">
       <div className="footer_home">
         <img src={logo_white} alt="logo white" />
         <p className="footer_legend">© 2020 Kasa. All rights reserved</p>

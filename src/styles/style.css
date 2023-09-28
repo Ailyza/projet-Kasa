@@ -2,20 +2,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
-}
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.container-fluid {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0;
 }
 
 a {
@@ -73,9 +60,7 @@ p {
   a {
     padding-right: 1rem;
   }
-  .container {
-    padding: 1.5rem;
-  }
+
   .big {
     font-size: 96px;
     font-weight: bold;

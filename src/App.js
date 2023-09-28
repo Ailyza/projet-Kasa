@@ -10,7 +10,7 @@ import Fiche from './pages/Fiche';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='app-wrapper'>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,8 +18,8 @@ const App = () => {
           <Route path="/About" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 };
