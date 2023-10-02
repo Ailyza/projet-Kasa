@@ -9,10 +9,6 @@
   gap: 60px;
 
 }
-.card-img-top{
-  border-radius: 30px;
-  
-}
 
 @media (max-width: 912px) {
   .container-fluid {

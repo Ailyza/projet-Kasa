@@ -1,11 +1,11 @@
 import React from 'react';
 import './banner.css';
-import banner_accueil from '../../assets/images/banner_acceuil.png';
 
-const Banner = () => {
+const Banner = ({ url, displayText }) => {
   return (
       <div className="banner">
-           <p>Chez vous, partout et ailleurs</p>
+           <img className='banner-img' src={url} alt='image banner' />
+           {displayText && <p>Chez vous, partout et ailleurs</p>}
       </div>
   );
 };

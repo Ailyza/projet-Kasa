@@ -1,0 +1,8 @@
+.InfoLocationTags{
+    display: flex;
+    column-gap: 15px;
+}
+
+.InfoLocationTags p {
+    margin: 0;
+}

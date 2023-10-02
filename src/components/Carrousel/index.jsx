@@ -3,9 +3,9 @@ import './carrousel.css';
 import arrow_back from '../../assets/images/arrow_back.png';
 import arrow_forward from '../../assets/images/arrow_forward.png';
 
-const Carrousel = ({ logement }) => {
+const Carrousel = ({ pictures }) => {
 
-  const totalPictures = logement.pictures.length;
+  const totalPictures = pictures.length;
   const [currentIndex, changeIndex] = useState(0);
 
   const previous = () => {
@@ -19,7 +19,7 @@ const Carrousel = ({ logement }) => {
 
     return (
     <div id="carousel" className='carousel-wrapper'>
-      {logement.pictures.map((slide, index) => {
+      {pictures.map((slide, index) => {
         return (
           <div
           className={index === currentIndex ? 'slide active' : 'slide'}

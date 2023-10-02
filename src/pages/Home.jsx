@@ -13,7 +13,7 @@ const Home = () => {
   },[])
   return (
     <div>
-      <Banner/>
+      <Banner url='https://i.ibb.co/sy1mD3d/banner-acceuil.png' displayText />
       <Habitations element={data}/>
     </div>
     

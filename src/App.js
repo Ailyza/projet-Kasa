@@ -11,15 +11,17 @@ const App = () => {
   return (
     <Router>
       <div className='app-wrapper'>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Fiche/:id" element={<Fiche />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
+        <div className='app-content'>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Fiche/:id" element={<Fiche />} />
+            <Route path="/About" element={<About />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 };

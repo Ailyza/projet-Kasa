@@ -1,7 +1,6 @@
 .banner {
-  background: url('../../assets/images/banner_acceuil.png');
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
   margin: 3rem auto;
   display: flex;
   justify-content: center;
@@ -11,9 +10,15 @@
   height: 195px;     
 }
 
+.banner-img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
 .banner p{
   color: white;
-  z-index: 1;
+  z-index: 2;
   font-size: 30px;
 }
 
