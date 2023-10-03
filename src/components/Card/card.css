@@ -3,6 +3,8 @@
     width: 100%;
     border-radius: 25px;
     overflow: hidden;
+    filter: brightness(85%);
+
 }
 
 .card-img-top {

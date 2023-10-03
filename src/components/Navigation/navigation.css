@@ -16,3 +16,11 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+
+@media (max-width: 912px) {
+  .navbar-wrapper {
+    display: flex;
+    column-gap: 22px;
+   
+  }
+}

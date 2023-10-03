@@ -1,6 +1,14 @@
 .star{
-    color: orange;
+    color: #ff6060;
+   
 }
 .star-gris{
     color: gainsboro
+}
+.rating-stars{
+   
+    position: absolute;
+    left:85% ;
+
+    top: 640px;
 }

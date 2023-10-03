@@ -14,7 +14,6 @@ const RatingStars = ({ rating }) => {
      stars.push(<BsStarFill className='star-gris'/>)   
     }
   }
-  
 
   return (
     <div className="rating-stars">
