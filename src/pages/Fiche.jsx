@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Carrousel from '../components/Carrousel';
 import { useLocation } from 'react-router-dom';
+import HostInfo from '../components/HostInfo';
 
 import '../App.css';
 
@@ -19,8 +20,14 @@ function Fiche (){
    return (
     <div>
       <Carrousel pictures={logement.pictures} />
-      <Information title={logement.title} location={logement.location} host={logement.host} />
+
+      <div className='infoHost'>
+      <Information title={logement.title} location={logement.location} host={logement.host} /> 
+      <HostInfo host={logement.host} />
+      </div>
+
       <div className='fiche-tags-stars'>
+
         <Tags tags={logement.tags} />
         <Ratings rating={logement.rating} />
       </div>
