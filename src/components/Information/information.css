@@ -32,3 +32,15 @@
     object-fit: cover;
     width: 60px;
 }
+@media (max-width: 767px) {
+.infoLocationTitle {
+    font-size: 22px;
+    font-weight: normal;
+
+}
+.infoLocationCity{
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+}

@@ -1,6 +1,4 @@
 import React,{useState} from 'react'
-import { useLocation } from 'react-router-dom';
-
 import './collapse.css';
 import { FaAngleDown } from 'react-icons/fa';
 

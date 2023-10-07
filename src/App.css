@@ -30,4 +30,21 @@
       padding: 0 2%;
     }
 }
-  
+@media (max-width: 767px) {
+    .fiche-tags-stars {
+      
+        width: 100%;
+        align-items: center;
+        display: inline;
+        
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .InfoLocationTags{
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+       
+    }
+  }
