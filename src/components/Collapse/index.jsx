@@ -21,16 +21,23 @@ const Collapse = ({ content, title }) => {
       <div className='collapse'>
         <button onClick={changerDropDownOpen} className='collapse-button'>
            {title}
-          <FaAngleDown className={`arrow-up ${dropdownOpen && 'active'}`}/>
+          <FaAngleDown className={`arrow-up ${dropdownOpen && 'active'}`}/> 
+        { /*Si dropdownOpen est (true) la class active d'applique*/}
+        { /*$ sert à faire du JS et les bactique englobe le code */}
         </button>
         {
+           /*si content est un tableau(true) on affiche la liste sinon on affiche la description 
+           */
           Array.isArray(content) ? (
+           
             <div className={`collapse-content ${dropdownOpen && 'active-content'} collapse-content-array`}>
               {
-              content.map((element) => {
-                return <p>{element}</p>
+              content.map((element, index) => {
+                return <p key={index}>{element}</p>
+                { /*key= identifie chaque element p */}
               })
             }
+             { /*utilisation de map si c'est un tableau*/}
             </div> 
           ) : (
             <div className={`collapse-content ${dropdownOpen && 'active-content'}`}>
