@@ -1,7 +1,9 @@
 .fiche-tags-stars {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 40px;
+    align-items: end;
 }
 
 .fiche-collapse {
@@ -21,8 +23,16 @@
 .app-content {
     padding: 0 5%;
 }
+.fiche-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .infoHost{
     display: flex;
+    width: 80%;
+    flex-direction: column;
 }
 
 @media (max-width: 912px) {
@@ -30,15 +40,15 @@
       padding: 0 2%;
     }
 }
-@media (max-width: 767px) {
+/*MOBILE*/
+@media (max-width: 480px) {
     .fiche-tags-stars {
-      
         width: 100%;
         align-items: center;
-        display: inline;
-        
+        display: flex;
         justify-content: space-between;
-        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
 
     }
     .InfoLocationTags{

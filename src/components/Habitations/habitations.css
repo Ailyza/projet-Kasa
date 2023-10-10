@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .container-fluid {
     grid-template-columns: repeat(1, 1fr);
   }

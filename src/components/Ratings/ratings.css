@@ -1,7 +1,27 @@
 .star{
     color: #ff6060;
+	width: 36px;
+	height: 36px;
    
 }
 .star-gris{
-    color: gainsboro
+    color: gainsboro;
+	width: 36px;
+	height: 36px;
+	
 }
+
+.rating-stars{
+	display: flex;
+	gap: 10px;
+	
+}
+
+/*MOBILE*/
+	@media (max-width: 480px) {
+		.star, 
+		.star-gris {
+			width: 24px;
+			height: 24px;
+		}
+	}

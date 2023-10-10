@@ -20,17 +20,17 @@ function Fiche (){
    return (
     <div>
       <Carrousel pictures={logement.pictures} />
-
+    <div className='fiche-header'>
       <div className='infoHost'>
       <Information title={logement.title} location={logement.location} host={logement.host} /> 
-      <HostInfo host={logement.host} />
+      <Tags tags={logement.tags} />
       </div>
-
+   
       <div className='fiche-tags-stars'>
-
-        <Tags tags={logement.tags} />
+      <HostInfo host={logement.host} />
         <Ratings rating={logement.rating} />
       </div>
+     </div>  
       <div className='fiche-collapse'>
         <Collapse content={logement.description} title='Description'/>
         <Collapse content={logement.equipments} title='Equipements'/>

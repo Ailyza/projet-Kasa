@@ -9,5 +9,13 @@
     background-color:#ff6060;
     color: white;
     border-radius: 10px;
+    font-size: 14px;
     padding: 3px 22px 3px 22px;
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    .InfoLocationTags p{
+        font-size: 10px;
+    }
+
 }

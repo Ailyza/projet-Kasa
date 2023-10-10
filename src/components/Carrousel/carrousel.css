@@ -40,8 +40,8 @@
   .slide.active {
     opacity: 1;
   }
-  
-  @media (max-width: 912px) {
+  /*MOBILE*/
+  @media (max-width: 480px) {
     .slide-item {
       height: 255px;
       border-radius: 10px;

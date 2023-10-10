@@ -1,7 +1,8 @@
 .information{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+    width: 80%;
 
 }
 .infoLocationTitle{
@@ -15,13 +16,6 @@
 
 }
 
-.host-wrapper {
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-    position:absolute;
-
-    }
 
 .host-name {
     padding: 0;

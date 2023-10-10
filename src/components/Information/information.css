@@ -2,29 +2,31 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-
 }
+
 .infoLocationTitle{
+    width: 100%;
     font-size: 37px;
     margin-bottom: -35px;
-
 }
 .infoLocationCity{
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 2px;
-
 }
 
 .host-wrapper {
     display: flex;
     align-items: center;
     column-gap: 5px;
-;
-
+    margin-bottom: 35px;
     }
 
 .host-name {
     padding: 0;
+    max-width:73px;
+    line-height: 142.6%;
+    font-size: 18px;
+
 }
 
 .host-img {
@@ -33,14 +35,36 @@
     width: 60px;
 }
 @media (max-width: 767px) {
+    .information{
+        width: 100%;
+    }
 .infoLocationTitle {
+    width: 100%;
     font-size: 22px;
     font-weight: normal;
 
 }
 .infoLocationCity{
+    width: 100%;
     font-size: 16px;
     font-weight: lighter;
 
 }
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+
+    .infoLocationTitle{
+        font-size: 18px;
+    }
+    .infoLocationCity{
+        font-size: 14px;
+    }
+    .host-wrapper{
+        order: 2;
+        margin-bottom: 0%;
+    }
+    .host-name {
+        margin-right: 10px;
+    }
 }
