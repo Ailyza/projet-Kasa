@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './collapse.css';
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleUp} from 'react-icons/fa';
 
 
 const Collapse = ({ content, title }) => {
@@ -21,7 +21,7 @@ const Collapse = ({ content, title }) => {
       <div className='collapse'>
         <button onClick={changerDropDownOpen} className='collapse-button'>
            {title}
-          <FaAngleDown className={`arrow-up ${dropdownOpen && 'active'}`}/> 
+          <FaAngleUp className={`arrow-up ${dropdownOpen && 'active'}`}/> 
         { /*Si dropdownOpen est (true) la class active d'applique*/}
         { /*$ sert à faire du JS et les bactique englobe le code */}
         </button>

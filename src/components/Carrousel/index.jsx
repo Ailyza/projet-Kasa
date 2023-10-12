@@ -22,6 +22,14 @@ const Carrousel = ({ pictures }) => {
   console.log({pictures})
   console.log(totalPictures)
 
+if(pictures.length === 1) {
+  return (
+    <div id="carousel" className='carousel-wrapper'>
+       <img className="slide-item" src={pictures[0]} alt="slide item" />
+    </div>
+  )
+}
+  
     return (
     <div id="carousel" className='carousel-wrapper'>
       {pictures.map((slide, index) => {
@@ -36,8 +44,11 @@ const Carrousel = ({ pictures }) => {
             )}
           </div>
         );
-        })
+        }) 
+    
+       
       }
+      
       <div className="counter">
         {currentIndex + 1}/{totalPictures +1}
       </div>
